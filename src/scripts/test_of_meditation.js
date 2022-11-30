@@ -1,6 +1,7 @@
 let startBlock = document.getElementById("startBlock");
 let testBlock = document.getElementById("testBlock");
 
+let img = document.getElementById("test-img");
 let testBlockText = document.getElementById("testBlockText");
 let answer1 = document.getElementById("a1");
 let answer2 = document.getElementById("a2");
@@ -10,6 +11,7 @@ let answerInput1 = document.getElementById("answer1");
 let answerInput2 = document.getElementById("answer2");
 let answerInput3 = document.getElementById("answer3");
 let answerInput4 = document.getElementById("answer4");
+
 
 let currentQuestion = 0;
 let rightAnswers = 0;
@@ -101,7 +103,6 @@ const startTest = () => {
     startBlock.style.display = "none";
     testBlock.style.display = "flex";
     setQuestion();
-
 }
 
 const setQuestion = () => {
@@ -110,11 +111,7 @@ const setQuestion = () => {
     answer2.innerHTML = testData[currentQuestion].answers[1];
     answer3.innerHTML = testData[currentQuestion].answers[2];
     answer4.innerHTML = testData[currentQuestion].answers[3];
-
-    let img = document.getElementById("test-img");
     img.src = testData[currentQuestion].img;
-
-
 }
 
 const checkAnswer = () => {
@@ -131,7 +128,6 @@ const checkAnswer = () => {
     answerInput2.checked = false;
     answerInput3.checked = false;
     answerInput4.checked = false;
-
     currentQuestion++;
     if (currentQuestion < testData.length) {
         setQuestion();
