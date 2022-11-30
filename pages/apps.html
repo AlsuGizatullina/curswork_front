@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../src/icons/ico-logo.png" sizes="any">
+    <link rel="stylesheet" href="./../src/styles.css">
+    <title>Meditation - Приложения</title>
+</head>
+<body>
+<header class="menu-header">
+    <div class="menu-logo">
+        <a class="logo" href="./../index.html">
+            <img src="./../src/icons/logo.png" alt="logo"/>
+            <span>Meditoria</span>
+        </a>
+        <div class="burger" id="burger" onclick="openMenu()">
+            <span></span>
+        </div>
+        <script>
+            let isMenuOpen = false;
+
+            function openMenu() {
+                if (isMenuOpen) {
+                    document.getElementById('burger').classList.add('burger');
+                    document.getElementById('burger').classList.remove('burger-active');
+                    document.getElementById('mobile-menu').classList.remove('active');
+                    isMenuOpen = false;
+                } else {
+                    document.getElementById('burger').classList.add('burger-active');
+                    document.getElementById('burger').classList.remove('burger');
+                    document.getElementById('mobile-menu').classList.add('active');
+                    isMenuOpen = true;
+                }
+            }
+        </script>
+    </div>
+    <nav class="menu-container">
+        <ul class="default-menu">
+            <li><a href="./../index.html">Главная</a></li>
+            <li><a href="./meditation.html">Медитация</a></li>
+            <li><a href="./apps.html">Приложения</a></li>
+            <li><a href="./dream.html">Сон</a></li>
+            <li><a href="./awareness.html">Осознанность</a></li>
+            <li><a href="./test.html">Тест</a></li>
+        </ul>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="./../index.html">Главная</a></li>
+            <li><a href="./meditation.html">Медитация</a></li>
+            <li><a href="./apps.html">Приложения</a></li>
+            <li><a href="./dream.html">Сон</a></li>
+            <li><a href="./awareness.html">Осознанность</a></li>
+            <li><a href="./test.html">Тест</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="apps-header">
+        <span class="apps-header-title">Подборка приложений для медитации</span>
+        <div class="apps-header-subtitle">Давно хотите начать медитировать, но не знаете, как лучше всего подступиться к
+            практикам осознанного внимания и расслабления? Все проще, чем кажется: половина медитирующих россиян делают
+            это с помощью мобильных приложений. Мы изучили их разнообразие и выбрали 5 лучших.
+        </div>
+    </div>
+    <div class="apps-container">
+        <div class="apps-item">
+            <div class="apps-item-image">
+                <img src="../src/images/apps-img-1.png" alt="app"/>
+            </div>
+            <div class="apps-content">
+                <div class="apps-item-title">1. Headspace</div>
+                <div class="apps-platforms">
+                    <span>IOS</span> <span>Android</span>
+                </div>
+                <div class="apps-item-description">
+                    Пожалуй, самое известное приложение для медитации, которое создал бывший буддийский монах и эксперт
+                    в области майндфулнесс Энди Паддикомб. Внутри – максимально разнообразный спектр техник: более сотни
+                    медитаций с гидом, мини-медитации, звуки сна, SOS-медитации для чрезвычайных ситуаций, для детей.
+                    Каждый «пакет» или курс включает в себя несколько коротких анимаций, которые объясняют ключевые
+                    понятия и различные техники, используемые в выбранной вами медитации. Изюминка этого приложения –
+                    возможность выбирать продолжительность каждой медитации под руководством гида. Headspace предложит
+                    10-минутную, 15-минутную или 20-минутную медитацию в зависимости от вашего уровня опыта или времени,
+                    которое вы сами готовы выделить для медитации. Еще одно интересное решение – минутные медитации,
+                    если вам вдруг захотелось привести мысли в порядок здесь и сейчас.
+                </div>
+                <div class="apps-item-link">
+                    <a href="https://www.headspace.com/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+        </div>
+        <div class="apps-item apps-reverse">
+            <div class="apps-content">
+                <div class="apps-item-title">2. Calm</div>
+                <div class="apps-platforms">
+                    <span>IOS</span> <span>Android</span>
+                </div>
+                <div class="apps-item-description">
+                    Приложение Calm с образцовым и простым в использовании интерфейсом отлично подойдет для тех, кто уже
+                    чувствует себя уверенно в своей практике медитации. Приложение предоставляет сеансы медитации под
+                    руководством гида от 3 до 25 минут — тут и практики для снятия беспокойства и стресса, и упражнения,
+                    направленных на концентрацию внимания во время работы. Большая аудио-библиотека подойдет для тех,
+                    кто любит работать, спать или даже медитировать под звуки природы или приятную музыку. В разделе
+                    Meditations можно выбрать медитацию на одном из 22 языков — на русском их не так много, но они есть.
+                    Каждый день появляются новые медитации, есть трекеры прогресса, а также семидневные и 21-дневные
+                    программы для начинающих. Также есть специальный раздел для сна, где на выбор представлено более 100
+                    сказок на ночь для взрослых. Платный раздел Courses предлагает аудиокурсы от мастеров медитаций,
+                    врачей и психологов. Каждый курс рассчитан на 10 дней и стоит 399 рублей для устройств на Android и
+                    379 рублей на iOS.
+                </div>
+                <div class="apps-item-link">
+                    <a href="https://www.calm.com/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+            <div class="apps-item-image">
+                <img src="./../src/images/apps-img-2.png" alt="app"/>
+            </div>
+        </div>
+        <div class="apps-item">
+            <div class="apps-item-image">
+                <img src="./../src/images/apps-img-3.png" alt="app"/>
+            </div>
+            <div class="apps-content">
+                <div class="apps-item-title">3. Insight Timer</div>
+                <div class="apps-platforms">
+                    <span>IOS</span> <span>Android</span>
+                </div>
+                <div class="apps-item-description">
+                    Приложение, которое использует 27% медитирующих с помощью мобильного телефона россиян, содержит
+                    тысячи различных медитаций и своего рода мастер-классов от известных практиков и инструкторов
+                    медитации — Тары Бранч, Сэма Харриса, Дженнифер Пирси и даже Моби. Некоторые курсы в приложении
+                    поднимают такие темы, как преодоление навязчивого мышления и создание утренних ритуалов. Особенность
+                    Insight Timer — таймеры медитации с интервальными колокольчиками, которые подойдут для тех, кому
+                    нравится медитировать без инструкций или указаний. Вы сами выбираете как долго вы хотите
+                    практиковаться, какой стиль вам нравится (например, сканирование тела, уменьшение чувства
+                    беспокойства/стресса и т.д.). В целом это приложение англоязычное, но в нём есть и курсы на русском
+                    языке. Еще одна изюминка Insight Timer — трекер, который позволяет вам планировать и отслеживать
+                    свой прогресс.
+                </div>
+                <div class="apps-item-link">
+                    <a href="https://insighttimer.com/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+        </div>
+        <div class="apps-item apps-reverse">
+            <div class="apps-content">
+                <div class="apps-item-title">4. Практика</div>
+                <div class="apps-platforms">
+                    <span>IOS</span>
+                </div>
+                <div class="apps-item-description">
+                    Российское мобильное приложение для медитации без эзотерики «Практика», которое запустили в 2019
+                    году предприниматели Антон Шаяхов, Дмитрий Афонин и Даниил Косинский, предлагает «простые и короткие
+                    уроки медитации» для борьбы со стрессом, бессонницей и демотивацией. Основа приложения с простым и
+                    удобным интерфейсом — пошаговые уроки с гуру медитации, которые объясняют основы практик и учат
+                    применять разнообразные техники. Цель «Практики» заключается в том, чтобы каждый человек благодаря
+                    нему мог найти своего гуру медитации и провести с ним персональный сеанс. В приложении вы найдете
+                    курсы по цифровому детоксу и снижению стресса, сможете пройти медитацию в разных обстоятельствах —
+                    например, попробовать осознанную прогулку, практику в транспорте и визуализацию для сна.
+                </div>
+                <div class="apps-item-link">
+                    <a href="https://www.praktika.app/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+            <div class="apps-item-image">
+                <img src="./../src/images/apps-img-4.png" alt="app"/>
+            </div>
+        </div>
+        <div class="apps-item">
+            <div class="apps-item-image">
+                <img src="./../src/images/apps-img-5.png" alt="app"/>
+            </div>
+            <div class="apps-content">
+                <div class="apps-item-title">5. Aura</div>
+                <div class="apps-platforms">
+                    <span>IOS</span> <span>Android</span>
+                </div>
+                <div class="apps-item-description">
+                    Инструкторы приложения Aura разделяют различные точки зрения, техники и учения, так что вы точно
+                    найдете медитацию, которая понравится именно вам. Кроме того, приложение предоставляет ежедневные
+                    микромедитации, которые длятся не более 3 минут, наставничество, звуки природы, истории и музыку,
+                    которые подбирает приложение в зависимости от настроения, которое вы указываете при его запуске
+                    (Aura отслеживает данные о вашем душевном состоянии и анализирует его). Приложение на английском, но
+                    уровень языка не очень сложный, все доступно и понятно. В Aura eсть возможность выбрать длительность
+                    нужной для вас медитации: 3 минуты, 10-20 минут, 1 час и даже многочасовые практики.
+                </div>
+                <div class="apps-item-link">
+                    <a href="https://www.aurahealth.io/" target="_blank">Перейти на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left-logo">
+            <a href="./index.html" class="footer-title menu-logo">
+                <img src="./../src/icons/logo.png" alt="logo"/>
+                <div>Meditoria</div>
+            </a>
+        </div>
+        <div class="footer-right">
+            <div>
+                <h3 class="footer-right-title">Ресуры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://www.youtube.com/channel/UCzzJTV8h6Qllr6cLXJ1Cx1g" target="_blank"
+                           class="footer-right-text">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/Yoga_ob" target="_blank" rel="nofollow"
+                           class="footer-right-text">Telegram</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Контакты</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://instagram.com/_alsugizatullina_" target="_blank"
+                           class="footer-right-text">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/alsugizatullina1" target="_blank"
+                           class="footer-right-text">Vk</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Партнёры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://mirea.ru" target="_blank" class="footer-right-text">
+                            РТУ МИРЭА</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer-right-text">И другие</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-footer">
+    <div class="footer-footer-block">
+        <span class="footer-text">Создатель проекта - Гизатуллина Алсу ИКБО-01-21</span>
+    </div>
+</footer>
+</body>
+</html>

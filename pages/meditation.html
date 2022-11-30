@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../src/icons/ico-logo.png" sizes="any">
+    <link rel="stylesheet" href="./../src/styles.css">
+    <title>Meditation - Медитация</title>
+</head>
+<body>
+<header class="menu-header">
+    <div class="menu-logo">
+        <a class="logo" href="./../index.html">
+            <img src="./../src/icons/logo.png" alt="logo"/>
+            <span>Meditoria</span>
+        </a>
+        <div class="burger" id="burger" onclick="openMenu()">
+            <span></span>
+        </div>
+        <script>
+            let isMenuOpen = false;
+
+            function openMenu() {
+                if (isMenuOpen) {
+                    document.getElementById('burger').classList.add('burger');
+                    document.getElementById('burger').classList.remove('burger-active');
+                    document.getElementById('mobile-menu').classList.remove('active');
+                    isMenuOpen = false;
+                } else {
+                    document.getElementById('burger').classList.add('burger-active');
+                    document.getElementById('burger').classList.remove('burger');
+                    document.getElementById('mobile-menu').classList.add('active');
+                    isMenuOpen = true;
+                }
+            }
+        </script>
+    </div>
+    <nav class="menu-container">
+        <ul class="default-menu">
+            <li><a href="./../index.html">Главная</a></li>
+            <li><a href="./meditation.html">Медитация</a></li>
+            <li><a href="./apps.html">Приложения</a></li>
+            <li><a href="./dream.html">Сон</a></li>
+            <li><a href="./awareness.html">Осознанность</a></li>
+            <li><a href="./test.html">Тест</a></li>
+        </ul>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="./../index.html">Главная</a></li>
+            <li><a href="./meditation.html">Медитация</a></li>
+            <li><a href="./apps.html">Приложения</a></li>
+            <li><a href="./dream.html">Сон</a></li>
+            <li><a href="./awareness.html">Осознанность</a></li>
+            <li><a href="./test.html">Тест</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class=section-meditation-1>
+        <h2>Медитация в повседневной жизни</h2>
+
+        <div class="meditation-text-container">
+            <div class="img">
+                <img src="./../src/images/woman-music-img.png" alt="">
+            </div>
+            <div class="text">
+                <p>
+                    &nbsp;&nbsp;Зачастую мы сталкиваемся со стереотипом, что медитация — занятие исключительно для йогов
+                    и людей, которые хотят познать скрытые смыслы вселенной. На самом деле такие практики незаметно для
+                    нас присутствуют в повседневной жизни. Ведь мы всегда стремимся расслабиться и избавиться от
+                    тяготящих размышлений после работы, тренировки или весёлого праздника. Но чтобы достичь
+                    максимального эффекта, нужно ознакомиться с техникой и уделить время занятиям.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Что же такое медитация? В глубоком смысле медитация — это инструмент духовных учений
+                    буддизма, который помогает очистить сознание и научиться управлять им. Это позволяет достичь
+                    внутреннего состояния спокойствия ума и тела при полной осознанности и внимательности. Существуют
+                    разные медитативные практики. Одни направлены на расслабление и безоценочное наблюдение настоящего
+                    момента бытия. Другие имеют определённый объект в виде мыслей и ощущений и часто сочетаются с
+                    визуализацией. Целью таких медитаций является управление не только сознанием, но и нашей внутренней
+                    энергией.
+                </p>
+            </div>
+        </div>
+        <div class="meditation-text-container">
+            <div class="meditation-text">
+                <h3>В чем заключается польза медитации?</h3>
+                <p>
+                    &nbsp;&nbsp; &nbsp;Если рассматривать медитацию с более приземлённой точки зрения, то для тех, кто ведёт
+                    активный образ жизни, практики могут стать ресурсом физического и эмоционального восстановления. Это
+                    происходит за счёт глубокого расслабления мышц и достижения покоя мыслей и чувств. Кроме того,
+                    медитация способна улучшить внимательность и собранность во время тренировок и соревнований. Что,
+                    конечно, будет положительно сказываться ваших на результатах.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Те, кто регулярно практикует медитации, существенно расширяют сознание и границы
+                    восприятия действительности. Выражаясь проще, люди проживают жизнь ярче, ощущают счастье сильнее и
+                    намного чаще, потому что способны видеть его в обычных вещах. Занятия дают возможность принимать и
+                    отпускать негативные эмоции и чувства, оставаясь в гармонии. Такие упражнения учат осознанности.
+                </p>
+            </div>
+        </div>
+        <div class="meditation-text-container">
+            <div class="text">
+                <h3>Как правильно медитировать?</h3>
+                <p>
+                    &nbsp;&nbsp;Правильный выбор техники зависит от личных предпочтений. Медитируют как с открытыми
+                    глазами, так и с закрытыми. Заниматься можно сидя, стоя, лёжа и даже при ходьбе. В классическом
+                    варианте сидячей медитации многие ошибочно полагают, что поза лотоса — это обязательное и неизменное
+                    условие. На самом деле, она не для всех является удобной.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Самое важное правило — сохранять позвоночный столб прямым, грудную клетку — свободной,
+                    чтобы дыханию ничего не мешало, а тело — максимально расслабленным. Новички могут сесть на стул,
+                    облокотиться на спинку и закрыть глаза. А дальше просто дышать, расслаблять мышцы одну за другой и
+                    отпускать мысли. Необходимо сохранять привычный для вас темп дыхания: не нужно стараться делать
+                    вдохи дольше или глубже, если вы чувствуете от этого неудобство и напряжение. Ведь медитация
+                    подразумевает любовь и трепетное отношение к себе и телу, а не насилие.
+                </p>
+            </div>
+            <div class="img">
+                <img src="./../src/images/men-meditation-picture.png" alt="">
+            </div>
+        </div>
+        <div class="meditation-text-container">
+            <div class="meditation-text">
+                <h3>Практика медитации: с чего начинать новичку?</h3>
+                <p>
+                    &nbsp;&nbsp; &nbsp;&nbsp;Рекомендуем начинать с коротких практик длинной в 3-5 минут. Потому что на первых порах
+                    вы можете быстро заскучать и, как результат, будете приступать к медитации без особой охоты. А потом
+                    и вовсе прекратите упражняться. Это распространенная ошибка всех начинающих. В среднем занятие у
+                    опытных практиков может длиться 10-15 минут. Но это, конечно, не предел.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Частая ошибка первых медитаций – чрезмерное старание и ожидание мгновенного результата.
+                    Вы можете так усердно медитировать в погоне за качеством и эффектом, что вместо расслабления и
+                    спокойствия получите напряжение и разочарование.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Специально для вас мы подготовили программу медитаций для начинающих, включающую в себя
+                    видео-материалы с успокаивающим голосом и мелодичным задним фоном, а также аудио с различными
+                    звуками природы, такими как пение птиц, шум воды, треск огня и т.д.
+                </p>
+                <p>
+                    &nbsp;&nbsp; &nbsp;&nbsp;Приятного прослушивания!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dream-section-2">
+        <h2>Программа медитаций для начинающих</h2>
+        <h3>Ваши первые шаги на пути к умиротворению</h3>
+        <div class="content">
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/SIAKLtSCJeU" target="_blank">
+                    <div class="dream-card-timing">
+                        11 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Медитация для настроя на утро
+                    </div>
+                    <img src="./../src/images/meditation1.jpeg" alt="">
+                </a>
+            </div>
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/qK1qhKVqj7o" target="_blank">
+                    <div class="dream-card-timing">
+                        8 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Медитация "Комната дыхания"
+                    </div>
+                    <img src="./../src/images/meditation2.jpg" alt="">
+                </a>
+            </div>
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/FYm5d1iX-6g" target="_blank">
+                    <div class="dream-card-timing">
+                        15 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Медитация от тревоги
+                    </div>
+                    <img src="./../src/images/meditation3.jpg" alt="">
+                </a>
+            </div>
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/FS6Wk1rAZ8E" target="_blank">
+                    <div class="dream-card-timing">
+                        11 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Медитация "Доверие"
+                    </div>
+                    <img src="./../src/images/meditation4.jpg" alt="">
+                </a>
+            </div>
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/FjgFI4g11qQ" target="_blank">
+                    <div class="dream-card-timing">
+                        13 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Очищение от негатива
+                    </div>
+                    <img src="./../src/images/meditation5.jpg" alt="">
+                </a>
+            </div>
+            <div class="dream-card-container">
+                <div class="dream-check-container">
+                    <label class="dream-checkbox">
+                        <input type="checkbox">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <a class="dream-card" href="https://youtu.be/29VXLjtc-Jo" target="_blank">
+                    <div class="dream-card-timing">
+                        10 мин
+                    </div>
+                    <div class="dream-card-icon-container">
+                        <div class="dream-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dream-card-title">
+                        Медитация на хороший день
+                    </div>
+                    <img src="./../src/images/meditation6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="dream-section-3">
+        <h2>Звуки природы</h2>
+        <div class="dream-audio-box">
+            <div class="dream-audio-glass">
+                <span class="title"></span>
+                <div class="dream-player">
+                    <span class="dream-player-title">Пение птиц</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation1.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">Журчание ручья</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation2.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">Лесная симфония</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation3.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">У реки</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation4.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">Ночная серенада</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation5.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">Перед рассветом</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation6.mp3">
+                    </audio>
+                </div>
+                <div class="dream-player">
+                    <span class="dream-player-title">Тепло огня</span>
+                    <audio
+                            controls
+                            src="./../src/audio/meditation7.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left-logo">
+            <a href="./index.html" class="footer-title menu-logo">
+                <img src="./../src/icons/logo.png" alt="logo"/>
+                <div>Meditoria</div>
+            </a>
+        </div>
+        <div class="footer-right">
+            <div>
+                <h3 class="footer-right-title">Ресуры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://www.youtube.com/channel/UCzzJTV8h6Qllr6cLXJ1Cx1g" target="_blank"
+                           class="footer-right-text">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/Yoga_ob" target="_blank" rel="nofollow"
+                           class="footer-right-text">Telegram</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Контакты</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://instagram.com/_alsugizatullina_" target="_blank"
+                           class="footer-right-text">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/alsugizatullina1" target="_blank"
+                           class="footer-right-text">Vk</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Партнёры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://mirea.ru" target="_blank" class="footer-right-text">
+                            РТУ МИРЭА</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer-right-text">И другие</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-footer">
+    <div class="footer-footer-block">
+        <span class="footer-text">Создатель проекта - Гизатуллина Алсу ИКБО-01-21</span>
+    </div>
+</footer>
+</body>
+</html>

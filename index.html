@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/icons/ico-logo.png" sizes="any">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Meditation - Главная</title>
+</head>
+<body>
+<header class="menu-header">
+    <div class="menu-logo">
+        <a class="logo" href="./index.html">
+            <img src="./src/icons/logo.png" alt="logo"/>
+            <span>Meditoria</span>
+        </a>
+        <div class="burger" id="burger" onclick="openMenu()">
+            <span></span>
+        </div>
+        <script>
+            let isMenuOpen = false;
+
+            function openMenu() {
+                if (isMenuOpen) {
+                    document.getElementById('burger').classList.add('burger');
+                    document.getElementById('burger').classList.remove('burger-active');
+                    document.getElementById('mobile-menu').classList.remove('active');
+                    isMenuOpen = false;
+                } else {
+                    document.getElementById('burger').classList.add('burger-active');
+                    document.getElementById('burger').classList.remove('burger');
+                    document.getElementById('mobile-menu').classList.add('active');
+                    isMenuOpen = true;
+                }
+            }
+        </script>
+    </div>
+    <nav class="menu-container">
+        <ul class="default-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="pages/meditation.html">Медитация</a></li>
+            <li><a href="pages/apps.html">Приложения</a></li>
+            <li><a href="pages/dream.html">Сон</a></li>
+            <li><a href="pages/awareness.html">Осознанность</a></li>
+            <li><a href="pages/test.html">Тест</a></li>
+        </ul>
+        <ul class="mobile-menu" id="mobile-menu">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="pages/meditation.html">Медитация</a></li>
+            <li><a href="pages/apps.html">Приложения</a></li>
+            <li><a href="pages/dream.html">Сон</a></li>
+            <li><a href="pages/awareness.html">Осознанность</a></li>
+            <li><a href="pages/test.html">Тест</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="section-1">
+        <div class="start-big">
+            <div class="general-text">
+                <div class="start-title">Забудьте о стрессе и тревоге с нашим улучшенным сервисом для медитаций</div>
+                <div class="start-text">Сделайте свою жизнь счастливее и повысьте свою продуктивность с помощью нашей
+                    программы медитаций осознанности
+                </div>
+                <div class="sale-block">
+                    Скидка 50% на первый месяц
+                </div>
+            </div>
+            <div class="start-img">
+                <img src="src/images/start-img.png" alt=""/>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <div class="glass-block">
+            <div class="glass-content">
+                <div class="glass-title">Почему важно медитировать?</div>
+                <div class="glass-text">Об этом и о многом другом вы сможете прочитать в данном разделе</div>
+            </div>
+            <div class="glass-btns">
+                <a href="pages/meditation.html" class="glass-btn">Перейти</a>
+            </div>
+        </div>
+        <div class="section-title">
+            <h2>Наши основные программы:</h2>
+        </div>
+        <div class="section-card-container">
+            <div class="section-card">
+                <span></span>
+                <div class="section-card-content">
+                    <div class="section-card-title">
+                        Спокойствие
+                    </div>
+                    <div class="section-card-text">
+                        Подборка расслабляющих медитаций и музыки на каждый день. Поддержите ментальное здоровье и
+                        восстановите силы после тяжелого рабочего дня
+                    </div>
+                    <a>329 руб./мес.</a>
+                </div>
+            </div>
+            <div class="section-card">
+                <span></span>
+                <div class="section-card-content">
+                    <div class="section-card-title">
+                        Экология сна
+                    </div>
+                    <div class="section-card-text">
+                        Медитации для сна, сказки на ночь, записанные умиротворяющим голосом, помогут вам избавиться от
+                        бессоницы и зависимости от социальных сетей перед сном
+                    </div>
+                    <a>289 руб./мес.</a>
+                </div>
+            </div>
+            <div class="section-card">
+                <span></span>
+                <div class="section-card-content">
+                    <div class="section-card-title">
+                        Meditoria Premium
+                    </div>
+                    <div class="section-card-text">
+                        Более 1000 видео, подкастов и музыки собраны в одной библиотеке. Meditoria-консультанты на связи
+                        с вами 24/7 для решения любой вашей проблемы
+                    </div>
+                    <a>469 руб./мес.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="title-3">
+            <h2>Присоединяйтесь к нашей программе, и увидите результаты уже через неделю</h2>
+        </div>
+        <div class="section-3-content">
+            <div class="section-3-block">
+                <div class="section-3-title">
+                    <h3>Демонстрация уменьшения стресса, тревоги и бессоницы с помощью Meditoria </h3>
+                </div>
+                <div class="section-3-text">
+                    <p>*График представлен на основании опроса пользователей Meditoria, которые принимали участие в
+                        программе медитации в течение 7 дней. </p>
+                </div>
+            </div>
+            <div class="graf-3">
+                <img src="./src/images/graf.png" alt="">
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left-logo">
+            <a href="./index.html" class="footer-title menu-logo">
+                <img src="./src/icons/logo.png" alt="logo"/>
+                <div>Meditoria</div>
+            </a>
+        </div>
+        <div class="footer-right">
+            <div>
+                <h3 class="footer-right-title">Ресуры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://www.youtube.com/channel/UCzzJTV8h6Qllr6cLXJ1Cx1g" target="_blank"
+                           class="footer-right-text">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/Yoga_ob" target="_blank" rel="nofollow"
+                           class="footer-right-text">Telegram</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Контакты</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://instagram.com/_alsugizatullina_" target="_blank"
+                           class="footer-right-text">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/alsugizatullina1" target="_blank"
+                           class="footer-right-text">Vk</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-right-title">Партнёры</h3>
+                <ul>
+                    <li class="mb-4">
+                        <a href="https://mirea.ru" target="_blank" class="footer-right-text">
+                            РТУ МИРЭА</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="footer-right-text">И другие</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-footer">
+    <div class="footer-footer-block">
+        <span class="footer-text">Создатель проекта - Гизатуллина Алсу ИКБО-01-21</span>
+    </div>
+</footer>
+</body>
+</html>
